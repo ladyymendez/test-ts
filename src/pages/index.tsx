@@ -14,10 +14,11 @@ const Home = ({post}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner />
-      <h2>{currentTest.data && currentTest.data.name}</h2>
+      <h2>Remote data fetching: {currentTest.data && currentTest.data.name}</h2>
       <h1>
-        Welcome {testData}
+        Redux: {testData}
       </h1>
+      <button onClick={methodDoesNotExist}>Break the world</button>;
     </div>
   )
 }
